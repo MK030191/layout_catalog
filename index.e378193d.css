@@ -1,0 +1,224 @@
+body {
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.catalog__header {
+  justify-content: space-between;
+  padding: 0 50px;
+  display: flex;
+}
+
+.catalog__header-logo {
+  align-items: center;
+  display: flex;
+}
+
+.catalog__header-navigation {
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.catalog__header-navigation-list {
+  text-transform: uppercase;
+  color: #060b35;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-decoration: none;
+}
+
+.catalog__header .catalog__header-navigation-list:hover {
+  content: attr(data-qa);
+  color: #00acdc;
+}
+
+.is-active {
+  color: #00acdc;
+  line-height: 60px;
+  position: relative;
+}
+
+.is-active:after {
+  content: "";
+  background-color: #00acdc;
+  border-radius: 8px;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.catalog__main {
+  grid-template-columns: repeat(1, 200px);
+  justify-content: center;
+  gap: 46px 48px;
+  padding: 50px 128px 72px;
+  display: grid;
+}
+
+@media (width >= 488px) {
+  .catalog__main {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (width >= 768px) {
+  .catalog__main {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (width >= 1024px) {
+  .catalog__main {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  width: 200px;
+  padding: 32px 16px 16px;
+  transition: all .3s;
+}
+
+.card-picture {
+  justify-content: center;
+  width: 160px;
+  height: 134px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card-description {
+  text-align: left;
+  color: #060b35;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card-code {
+  text-align: left;
+  color: #616070;
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-right: 68px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card-reviews {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.card-reviews-counting {
+  text-align: right;
+  color: #060b35;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card-description {
+  color: #34568b;
+}
+
+.reviews-stars-star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  display: flex;
+}
+
+.stars {
+  flex-direction: row;
+  margin: 0;
+  display: flex;
+}
+
+.reviews-stars-star:last-child {
+  margin-right: 0;
+}
+
+.stars--0 .stars__star:nth-child(-n+4), .stars--1 .stars__star:nth-child(-n+4), .stars--2 .stars__star:nth-child(-n+4), .stars--3 .stars__star:nth-child(-n+4), .stars--4 .stars__star:nth-child(-n+4), .stars--5 .stars__star:nth-child(-n+4), .stars--6 .stars__star:nth-child(-n+4), .stars--7 .stars__star:nth-child(-n+4) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+.card-price-block {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.card-price {
+  text-align: left;
+  color: #616070;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card-price-value {
+  text-align: right;
+  color: #060b35;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.button {
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #00acdc;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.button:hover {
+  color: #00acdc;
+  background-color: #fff;
+}
+/*# sourceMappingURL=index.e378193d.css.map */
